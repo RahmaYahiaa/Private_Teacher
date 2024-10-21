@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Tajawal", sans-serif;
+
+  color: #333;
+}
+
+/* Profile page background */
+.bg-profile {
+  background-image: url("../../public/images/sign_bg.png");
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main container for the profile page */
+.profile-page {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile header section */
+.profile-page .profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* Avatar container to align profile picture and camera icon */
+.profile-page .avatar-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ddd;
+}
+
+/* User's profile picture */
+.profile-page .profile-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Camera icon for profile picture upload */
+.profile-page .camera-icon {
+  position: absolute;
+  bottom: 10px; /* Adjust the top value as needed to place it higher */
+  right: 10px; /* Keep it to the right */
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  z-index: 10; /* Ensure it stays on top of the profile image */
+}
+
+.camera-icon svg {
+  color: #cecccc;
+}
+
+/* User's name */
+.profile-page .profile-header h1 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+/* Online/offline status */
+.profile-page .online-status {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.profile-page .online-status.online {
+  color: green;
+}
+
+.profile-page .online-status.offline {
+  color: red;
+}
+
+/* Form for editing user data */
+.profile-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-page form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-page form input,
+.profile-page form textarea,
+.profile-page form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.profile-page form textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Buttons */
+.profile-page button[type="submit"],
+.profile-page button[type="button"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.profile-page button[type="submit"] {
+  background-image: -webkit-linear-gradient(
+    150deg,
+    rgb(3, 81, 156) 0%,
+    rgb(49, 117, 182) 51%,
+    rgb(94, 152, 207) 100%
+  );
+  color: white;
+}
+
+.profile-page button[type="button"] {
+  background-color: #ccc;
+  color: black;
+}
+
+.profile-page button[type="submit"]:hover,
+.profile-page button[type="button"]:hover {
+  opacity: 0.9;
+}
+
+/* Profile details section */
+.profile-page .profile-details {
+  margin-top: 20px;
+}
+
+.profile-page .profile-details p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Inline info details */
+.profile-page .inline-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.profile-page .inline-info strong {
+  font-weight: 600;
+}
+
+/* Teacher details heading */
+.profile-page h2 {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.profile-page .edit-profile-btn {
+  background-image: -webkit-linear-gradient(
+    150deg,
+    rgb(3, 81, 156) 0%,
+    rgb(49, 117, 182) 51%,
+    rgb(94, 152, 207) 100%
+  );
+  color: white !important;
+  padding: 10px 40px !important;
+  border: none !important;
+  border-radius: 5px !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+}
+.profile-page .edit-profile-btn:hover {
+  opacity: 0.9 !important;
+}
+
+/* Ensure responsive design on mobile */
+@media (max-width: 768px) {
+  .profile-page .profile-page {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .profile-page .profile-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-page form input,
+  .profile-page form textarea,
+  .profile-page form select {
+    font-size: 0.9rem;
+  }
+
+  .profile-page button[type="submit"],
+  .profile-page button[type="button"] {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,300 @@
+* {
+    /* direction: rtl; */
+    font-family: "BahijBold";
+}
+
+@font-face {
+    font-family: 'BahijBold';
+    src: url('./Bahij_TheSansArabic-Plain.ttf') format('truetype');
+    font-weight: bolder;
+    font: optional;
+    font-style: normal;
+}
+
+
+
+.contact .info .row {
+    /* padding: 80px 60px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .info .row .info_block {
+    /* padding: 80px 60px; */
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.contact .info .row .info_block span {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    color: #135DA5;
+    border: 1px solid #135DA5;
+    border-radius: 50%;
+    /* margin-left: 20px; */
+    flex-shrink: 0;
+    transition: all .3s;
+}
+
+.contact .info .row .info_block .text {
+    font-family: "BahijBold" !important;
+    margin-left: 15px;
+}
+
+.contact .info .row .info_block .text h2,
+.contact .info .row .info_block .text h3 {
+    font-family: "BahijBold" !important;
+    font-size: large;
+    flex-shrink: 0;
+    width: fit-content;
+    /* width: 100%; */
+}
+
+.contact .info .row .info_block .text h2 {
+
+    font-weight: bolder;
+    margin-bottom: 15px;
+    line-height: 32px;
+    color: #000000;
+    margin-top: 0;
+    font-size: 25px;
+}
+
+
+.contact .info .info_block:hover span {
+    color: #fff;
+    background-color: #135DA5;
+    /* margin-left: 50px; */
+}
+
+
+.custom-confirm {
+    background-image: linear-gradient(
+      150deg,
+      rgb(3, 81, 156) 0%,
+      rgb(49, 117, 182) 51%,
+      rgb(94, 152, 207) 100%
+    );
+    color: white;
+    border: none;
+  }
+  .custom-confirm:hover {
+    background-color: #e9e9e9;
+    color: #03519c;
+  }
+  
+@media (max-width :576px) {
+    .contact .info .row .info_block span {
+        width: 50px;
+        height: 100px;
+        text-align: center;
+        /* line-height: 100px; */
+        font-size: 20px;
+        color: #135DA5;
+        border: 1px solid #135DA5;
+        border-radius: 20%;
+        /* margin-left: 20px; */
+        flex-shrink: 0;
+        transition: all .3s;
+    }
+
+    .contact .info .row .info_block:hover span {
+        color: #fff;
+        background-color: #135DA5;
+        /* margin-left: 50px; */
+    }
+
+}
+.register-btn {
+    background-color: #0055af;
+    color: white !important;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 10px;
+    text-decoration: none;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .register-btn:hover {
+    background-color: #003f8a !important;
+    color: white !important;
+  }
+/* @media (max-width:990px) {
+    .contact .info .row {
+        /* padding: 80px 60px; 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+} */
+
+.contact .contact_form {
+    background-color: #F6F7FA;
+    /* padding: 80px 60px; */
+    position: relative;
+    text-align: right;
+}
+
+
+.contact .contact_form .title {
+    /* margin-bottom: 20px; */
+    color: #000;
+    /* position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px; */
+}
+
+.contact .contact_form .title h1,
+.contact .contact_form .title h3 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.contact .contact_form .title h1{
+    font-size: 23px;
+
+}
+.contact .contact_form .title h3{
+    font-size: 19px;
+    color: rgb(112, 112, 112);
+}
+
+.contact .contact_form .title hr {
+    width: 150px;
+    border: 1px none #011676;
+    margin-right: 0;
+    height: 5px;
+    background-color: #001ac2;
+    width: 150px;
+    opacity: 1;
+ 
+}
+
+
+
+input {
+    border: 1px solid var(--custom-border-color);
+    width: 100%;
+}
+
+:root {
+    --custom-border-color: blue;
+}
+
+
+.contact .contact_form form {
+    display: flex;
+    flex-wrap: wrap;
+    /* position: relative;
+    right: 0;
+    width: 100%;
+    margin-top: 80px; */
+    /* margin-right: -60px; */
+}
+
+/* .contact .contact_form form .form-group {
+    /* margin-bottom: 10px;
+    width: 100%; 
+} */
+
+.contact .contact_form form .form-control {
+    height: 50px;
+    border-color: #011676;
+    border-radius: 6px;
+    font-size: 18px;
+    width: calc(99.5%);
+    margin-left: 1%;
+}
+
+.contact .contact_form form textarea.form-control {
+    height: 300px;
+    padding: 15px 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact .contact_form form .btn {
+    width: 170px;
+    height: 50px;
+    padding: 0;
+    background-color: #03519C;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #fff !important;
+    line-height: 50px !important;
+    text-align: center;
+    outline: none !important;
+    background-image: -webkit-linear-gradient(150deg, rgb(3, 81, 156) 0%, rgb(49, 117, 182) 51%, rgb(94, 152, 207) 100%);
+    border: none;
+    transition: all .3s;
+    margin-top: 10px;
+}
+
+
+.contact .contact_form form .form-group:nth-of-type(1),
+.contact .contact_form form .form-group:nth-of-type(2) {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+/* MAKE MAP BETWEEN FOEM */
+.contact .row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#map {
+    height: 450px;
+    width: 50%;
+    /* margin-left: 50px; */
+}
+
+.leaflet-tooltip {
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* SMALL SCREEN */
+@media (max-width: 768px) {
+    .contact .info {
+        padding: 40px 30px;
+    }
+
+    .contact .contact_form {
+        padding: 40px 30px;
+    }
+
+    #map {
+        width: 100%;
+    }
+
+    .contact .contact_form form .form-group:nth-of-type(1),
+    .contact .contact_form form .form-group:nth-of-type(2) {
+        width: 100%;
+    }
+
+    .contact .row {
+        flex-wrap: wrap;
+    }
+}

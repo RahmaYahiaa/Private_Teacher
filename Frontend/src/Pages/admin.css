@@ -1,0 +1,89 @@
+/* Container adjustments */
+.dash-container {
+  width: 100% !important;
+
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Row styling */
+.dash-container .row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Sidebar styling */
+.dash-container .sidebar {
+  background-color: #f8f9fa;
+  border-right: 2px solid #ddd;
+  height: 93vh; /* Make the sidebar full height */
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.dash-container .sidebar h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.dash-container .sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dash-container .sidebar ul li {
+  direction: ltr !important;
+  margin-bottom: 15px;
+}
+
+.dash-container .sidebar ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #007bff;
+  direction: ltr !important;
+}
+
+.dash-container .sidebar ul li a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Content area styling */
+.dash-container .col-md-8 {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Table styling for dashboard */
+.dash-container .table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.dash-container .table th,
+.dash-container .table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.dash-container .table th {
+  background-color: #f1f1f1;
+}
+
+.dash-container .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Buttons for actions */
+.dash-container button {
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  margin-right: 5px;
+}
+
+.dash-container button:hover {
+  cursor: pointer;
+}

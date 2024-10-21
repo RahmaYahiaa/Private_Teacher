@@ -1,0 +1,33 @@
+
+
+@font-face {
+    font-family: 'BahijBold';
+    src: url('./Bahij_TheSansArabic-Plain.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.about_us{
+    padding-top: 50px;
+   
+    justify-content: center;
+   
+    display: flex;
+    
+}
+.about_us .title{
+    margin-left: 50px;
+   margin-left: 580px;
+    text-align: center;
+}
+.about_us h2{
+    color: black;
+    font-family: system-ui;
+}
+.about_us p,span,h1{
+   
+    font-family: system-ui;
+}
+title .img-fluid{
+    padding-bottom: 10px;
+}

@@ -1,0 +1,59 @@
+.about {
+    padding: 60px;
+    font-family: system-ui;
+}
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #393939;
+    font-family: system-ui;
+}
+.about .about_block {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.about .about_block img {
+    max-width: 70px;
+    margin-left: 12px;
+}
+.about .about_block .about_text h1 {
+    font-size: 18px;
+    color: #000;
+    margin-top: 0;
+}
+.about .about_block .about_text p {
+    font-size: 13px;
+    line-height: 25px;
+}
+.about .about_img {
+    max-width: 100%;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about {
+        padding: 30px;
+    }
+    .about .about_block {
+        width: 100%; /* Make blocks full width on smaller screens */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about .about_block img {
+        max-width: 50px; /* Reduce icon size on smaller screens */
+        margin: 0 0 10px 0; /* Adjust margin for a cleaner layout */
+    }
+    .about .about_block .about_text h1 {
+        font-size: 16px; /* Reduce heading size on mobile */
+    }
+    .about .about_block .about_text p {
+        font-size: 14px; /* Increase readability on mobile */
+    }
+}

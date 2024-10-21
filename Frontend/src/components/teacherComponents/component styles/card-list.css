@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+.list-layout .teacher-card {
+  background-color: #fff;
+  display: flex;
+  width: 100% !important;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: 0 !important;
+  margin-bottom: 20px !important;
+  transition: transform 0.3s ease;
+  position: relative;
+
+  overflow: hidden;
+}
+
+.list-layout .teacher-card:hover {
+  transform: translateY(-8px);
+}
+
+.list-layout .teacher-image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list-layout .teacher-image {
+  height: 100%;
+  width: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.list-layout .favorite-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.list-layout .favorite-button .heart-icon {
+  font-size: 1.5rem;
+  color: #0055af;
+}
+
+.list-layout .favorite-button .filled-heart-icon {
+  color: #0055af;
+}
+
+.list-layout .teacher-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+.list-layout .teacher-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 10px;
+}
+.list-layout .teacher-account {
+  cursor: pointer;
+}
+.list-layout .teacher-account:hover {
+  color: #007bff;
+  transform: scale(1.01);
+}
+
+.list-layout .teacher-meta {
+  font-size: 0.9rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.list-layout .teacher-meta p {
+  margin: 15px;
+}
+
+.list-layout .teacher-meta svg {
+  margin-right: 8px;
+  color: #0055af;
+}
+
+.list-layout .teacher-rating {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.list-layout .star-icon {
+  font-size: 1rem;
+  color: #fa8200;
+  margin-right: 2px;
+}
+
+.list-layout .star-icon.empty {
+  color: #ddd;
+}
+
+.list-layout .rating-number {
+  font-size: 0.9rem;
+  color: #555;
+  margin-left: 5px;
+}
+
+.list-layout .contact-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: inline-block;
+  width: 200px;
+  padding: 10px 0;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 100px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.list-layout .contact-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  border-color: #0056b3;
+}
+* {
+  box-sizing: border-box;
+}
+
+.list-layout .teacher-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 100% !important;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.list-layout .teacher-card:hover {
+  transform: translateY(-8px);
+}
+
+.list-layout .teacher-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-layout .teacher-image {
+  height: 250px;
+  min-width: 250px;
+  max-width: 100%;
+  margin-right: 35px;
+}
+
+.list-layout .favorite-button {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  background: #f6f6f6 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.list-layout .favorite-button .heart-icon {
+  font-size: 1.1rem;
+  color: #0055af;
+}
+
+.list-layout .teacher-title {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+.list-layout .teacher-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 5px;
+}
+
+.list-layout .teacher-account {
+  cursor: pointer;
+}
+
+.list-layout .teacher-account:hover {
+  color: #007bff;
+  transform: scale(1.01);
+}
+
+.list-layout .teacher-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.list-layout .teacher-meta p {
+  margin: 0;
+}
+
+.list-layout .teacher-meta svg {
+  margin-right: 5px;
+  color: #0055af;
+}
+
+.list-layout .teacher-rating {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.list-layout .star-icon {
+  font-size: 1rem;
+  color: #fa8200;
+  margin-right: 2px;
+}
+
+.list-layout .star-icon.empty {
+  color: #ddd;
+}
+
+.list-layout .rating-number {
+  font-size: 0.85rem;
+  color: #555;
+  margin-left: 5px;
+}
+
+.list-layout .contact-button {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  padding: 10px 0;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 100px;
+  font-size: 1.1rem;
+  margin: 0 !important;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.list-layout .contact-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: #0056b3;
+  transition: all 0.4s ease;
+  border-radius: 100px;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.list-layout .contact-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.list-layout .contact-button:hover {
+  color: #fff;
+}
+
+.contact-button-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 992px) {
+  .list-layout .contact-button {
+    width: 150px;
+    font-size: 1rem;
+    position: relative;
+    margin: 30px 0 0 30px;
+  }
+}

@@ -1,0 +1,36 @@
+.admin-dashboard {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.admin-dashboard h1 {
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.admin-dashboard table {
+  margin-top: 20px;
+  height: 600px !important;
+  overflow-y: auto !important;
+}
+
+.admin-dashboard form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.admin-dashboard .button-delete {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}

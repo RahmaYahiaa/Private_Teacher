@@ -1,0 +1,31 @@
+.grid-layout {
+  display: grid;
+  width: 100% !important;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 15px;
+}
+
+.list-layout {
+  display: block;
+}
+
+/* .cards-section {
+  display: block;
+  width: 100%;
+} */
+* {
+  box-sizing: border-box;
+}
+.teacher-section {
+  width: 100%;
+}
+@media screen and (max-width: 1500px) {
+  .grid-layout {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+@media screen and (max-width: 1000px) {
+  .grid-layout {
+    grid-template-columns: repeat(1, 1fr); /* 2 cards per row */
+  }
+}

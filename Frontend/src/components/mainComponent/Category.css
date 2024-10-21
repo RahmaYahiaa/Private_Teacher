@@ -1,0 +1,143 @@
+.category .block .img_container .hover .center{
+    background-color: #EBF5FF !important;
+    background-image: linear-gradient(150deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 51%, rgb(255, 255, 255) 100%);
+    color: #054483;
+    opacity: 100;
+    margin-top: 120px;
+    margin-left: 90px !important;
+}
+.category .block .img_container .hover .center:hover{
+    background-color: #EBF5FF !important;
+    background-image: linear-gradient(150deg, rgb(3,81,156) 0%, rgb(49,117,182) 51%, rgb(94,152,207) 100%);
+    color: #ffffff !important;
+}
+.category{
+    position: relative;
+    padding: 80px 60px;
+}
+.title{
+    position: relative;
+    display: table;
+    margin-bottom: 25px;
+}
+.title span {
+    width: auto;
+    height: 30px;
+    background-color: #EBF5FF;
+    font-size: 12px;
+    color: #000;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 25px;
+    border-radius: 5px;
+    display: table;
+}
+.title h1{
+    font-size: 32px;
+    color: #000;
+    margin: 20px 0;
+}
+.title hr{
+    width: 150px;
+    border-top: 5px solid #054483;
+    border-radius: 1px;
+    float: right;
+    margin: 0;
+}
+.title:after {
+    content: "";
+    width: 10px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+}
+.category .more {
+    float: left;
+    margin-top: 40px;
+}
+.category .more2 {
+    display: none;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.category .block{
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 314px;
+    border-radius: 10px;
+}
+.category .block .img_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.category .block .img_container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.category .block .img_container .img_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #032C53;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    transition: all .3s;
+}
+.category .block .img_container .hover {
+    width: 100%;
+    height: 100%;
+    background-color: #032C53;
+    background-image: linear-gradient(150deg, rgb(3,81,156) 0%, rgb(49,117,182) 51%, rgb(94,152,207) 100%);position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0.8;
+    transition: all .3s;
+}
+.category .block .img_container .hover .center{
+background-color: #EBF5FF !important ;
+color: #032C53 !important;
+}
+
+.category .block .text{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    font-size: 27px;
+    text-align: center;
+    transition: all .3s;
+}
+.category .block .text h1{
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bolder;
+    font-family: system-ui;
+    color: #fff;
+    margin-top: 0;
+}
+.category .block .text h3{
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: bolder;
+    line-height: 24px;
+    color: #fff;
+    margin: 0;
+}
+.category .block:hover .text{left: -150%;}
+.category .block:hover .img_container .img_overlay{left: -100%;}
+.category .block:hover .img_container .hover{left: 0;}
+.category .block:hover .img_container a{left: 50%;}
+
+    
+
+/*end category*/
+@media (max-width: 576px) {
+    .category-col:nth-child(n+2) {
+      display: none;
+    }
+  }

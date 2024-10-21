@@ -1,0 +1,10 @@
+$prefix: 'custom-';
+$input-border-color: var(--#{$prefix}border-color);
+
+.form-control {
+  border: 1px solid $input-border-color;
+}
+
+:root {
+  --custom-border-color: blue;
+}
